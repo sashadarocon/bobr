@@ -1,3 +1,100 @@
-body{
-    background: #141414;
+/* подключение шрифтов */
+@font-face {
+   font-family:bebroit;/* имя шрифта*/
+   src: url("../fonts/BebasNeue-Regular.ttf"); /*путь к фаилу*/
+   @font-face {
+   font-family:bobra;
+   src: url("..fonts/Poppins-MediumItalic.ttf");
 }
+}
+
+body{
+    background:url("../img/sybnf.jpg");
+    color: #fdfdfd;
+    font-family:bebroit;
+    text-align: center;
+    
+}
+
+.wrapper {  
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+@media (max-width:1200px){
+    .wrapper {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px){
+    .wrapper {
+        max-width: 750px;
+    }
+}
+@media (max-width:767px){
+    .wrapper {
+        max-width: none;
+    }
+}
+
+.avatar {
+    background: url("../img/unnamed.jpg");
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    
+}
+
+.avatar::after {
+    content: "";
+    display: block;
+    height: 105%;
+    width: 105%;
+    opacity: 0.5;
+    background: #1a1a1a;
+    position: relative;
+    z-index: -1;
+    border-radius: 50%;
+    left: -2.5%;
+    top: -2.5%;
+}
+
+.bobr {
+    font-size: 25px;   
+}
+
+.icon-item {
+    display: inline-block;
+    width: 34px;
+    margin-right: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+.bocu {
+    font-size: 55px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.silka {
+    color: rgb(236, 236, 236);
+    margin-top: 10px;
+    
+}
+
+
+p{
+    color: #fcfaf6;
+    font-family: bobra;
+}
+
+
